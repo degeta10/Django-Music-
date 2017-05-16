@@ -5,6 +5,8 @@ def index(request):
 
 def rock(request):
     return(HttpResponse("<h1> This is Rock Music</h1>"))
+def detail(request, album_id):
+	return(HttpResponse("<h2>Details of album id:"+str(album_id)+"</h2>"))
 
 
 

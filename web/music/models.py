@@ -9,7 +9,7 @@ class Album(models.Model):
         album_logo = models.CharField(max_length=200)
 
         def __str__(self):
-            return self.artist + ' - ' + self.album_title
+            return self.album_title+' - '+self.artist
 
 
 class Song(models.Model):
